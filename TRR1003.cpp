@@ -19,7 +19,6 @@ void solveType2(){
     for(int i = 1; i < n; ++i)
         for(int j = i + 1; j <= n; ++j)
             if(graph[i][j] == 1) edges.push_back({i, j});
-    sort(edges.begin(), edges.end());
     
     int m = edges.size();
     int arr[n + 1][m];
